@@ -14,12 +14,12 @@ import java.util.Optional;
 public class FreeapiController {
 //    private readonly str;
     @Autowired
-    @GetMapping("/fetch")
-
+//    @GetMapping("/fetch")
     private String hello() {
         return "Hello";
     }
 
+    @GetMapping("/fetch")
     private ResponseEntity<String> GetDataAPI() {
         return ResponseEntity.ok("Hello");
     }
